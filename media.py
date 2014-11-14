@@ -3,6 +3,9 @@ class Media():
         raise NotImplementedError('Media e uma classe abstrata \
                                     e nao deve ser instanciada!')
 
+    def __str__(self):
+        return self.title
+
 
 class DVD(Media):
     def __init__(self, title):
