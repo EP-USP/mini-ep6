@@ -1,3 +1,6 @@
+from playstrategy import TVStrategy,
+
+
 class Media():
     def __init__(self):
         raise NotImplementedError('Media e uma classe abstrata \
