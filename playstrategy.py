@@ -7,13 +7,13 @@ class PlayStrategy():
         pass
 
 
-class TVStrategy(Media):
+class TVStrategy(PlayStrategy):
     def play(self, instance):
         print ('Playing a nice ' + instance.title + '\'s ' +
             instance.name + 'at my big TV')
 
 
-class RadioStrategy(Media):
+class RadioStrategy(PlayStrategy):
     def play(self, instance):
         print ('Playing a nice ' + instance.title + '\'s ' +
             instance.name + 'at my big TV')
