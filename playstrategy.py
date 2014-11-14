@@ -8,12 +8,18 @@ class PlayStrategy():
 
 
 class TVStrategy(PlayStrategy):
+    def __init__(self):
+        pass
+
     def play(self, instance):
         print ('Playing a nice ' + instance.title + '\'s ' +
             instance.name + 'at my big TV')
 
 
 class RadioStrategy(PlayStrategy):
+    def __init__(self):
+        pass
+
     def play(self, instance):
         print ('Playing a nice ' + instance.title + '\'s ' +
             instance.name + 'at my big TV')
