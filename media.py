@@ -15,8 +15,8 @@ class DVD(Media):
         self.format = 'DVD'
 
     def play(self):
-        print('Playing a nice %s\'s %s on my big TV', self.title, self.format)
-
+        print('Playing a nice %s\'s %s'
+            ' on my big TV' % (self.title, self.format))
 
 class CD(Media):
     def __init__(self, title):
@@ -24,8 +24,8 @@ class CD(Media):
         self.format = 'CD'
 
     def play(self):
-        print('Playing a nice %s\'s %s on my big radio', self.title, self.format)
-
+        print('Playing a nice %s\'s %s'
+            ' on my big radio' % (self.title, self.format))
 
 class MP3(Media):
     def __init__(self, title):
@@ -33,4 +33,5 @@ class MP3(Media):
         self.format = 'MP3'
 
     def play(self):
-        print('Playing a nice %s\'s %s on my big radio', self.title, self.format)
+        print('Playing a nice %s\'s %s'
+            ' on my big radio' % (self.title, self.format))

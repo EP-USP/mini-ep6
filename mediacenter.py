@@ -1,25 +1,27 @@
+from media import CD, DVD, MP3
+
 class MediaCenter():
 
     def __init__(self):
         self.media_list = []
 
     def list_media(self):
-        for m in media_list:
+        for m in self.media_list:
             print(m)
 
     def play_media(self, title):
-        for m in media_list:
-            if (m.title == 'title'):
+        for m in self.media_list:
+            if (m.title == title):
                 m.play()
 
     def add_media(self, format, title):
-        if (format == 'dvd'):
-            media = dvd(title)
-        elif (format == 'cd'):
-            media = cd(title)
+        if (format == 'DVD'):
+            media = DVD(title)
+        elif (format == 'CD'):
+            media = CD(title)
         else:
-            media = mp3(title)
-        media_list.append(media)
+            media = MP3(title)
+        self.media_list.append(media)
 
     def remove_media(self, title):
-        media_list.remove(title)
+        self.media_list.remove(title)
