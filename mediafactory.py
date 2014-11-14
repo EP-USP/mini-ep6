@@ -1,10 +1,12 @@
+from media import CD, DVD, MP3
+
 class MediaFactory():
 
-	def create(self, format, title):
-		if (format == 'dvd'):
-			media = dvd(title)
-		elif (format == 'cd'):
-			media = cd(title)
-		else (format == 'mp3'):
-			media = mp3(title)
-		return media
+    def create(self, format, title):
+        if (format == 'dvd'):
+            media = DVD(title)
+        elif (format == 'cd'):
+            media = CD(title)
+        else:
+            media = MP3(title)
+        return media
