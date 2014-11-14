@@ -21,4 +21,3 @@ class MediaCenter():
 
     def remove_media(self, title):
         self.media_list.remove(title)
-

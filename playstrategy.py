@@ -12,8 +12,8 @@ class TVStrategy(PlayStrategy):
         pass
 
     def play(self, instance):
-        print('Playing a nice %s\'s %s on \
-            my big TV', instance.title, instance.format)
+        print('Playing a nice %s\'s %s'
+            ' on my big TV' % (instance.title, instance.format))
 
 
 class RadioStrategy(PlayStrategy):
@@ -21,6 +21,5 @@ class RadioStrategy(PlayStrategy):
         pass
 
     def play(self, instance):
-        print('Playing a nice %s\'s %s on \
-            my big radio', instance.title, instance.format)
-
+        print('Playing a nice %s\'s %s'
+            ' on my big radio' % (instance.title, instance.format))
