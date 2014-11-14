@@ -16,19 +16,19 @@ class Media():
 class DVD(Media):
     def __init__(self, title):
         self.title = title
-        self.name = 'DVD'
+        self.format = 'DVD'
         self.play_strategy = TVStrategy()
 
 
 class CD(Media):
     def __init__(self, title):
         self.title = title
-        self.name = 'CD'
+        self.format = 'CD'
         self.play_strategy = RadioStrategy()
 
 
 class MP3(Media):
     def __init__(self, title):
         self.title = title
-        self.name = 'MP3'
+        self.format = 'MP3'
         self.play_strategy = RadioStrategy()
