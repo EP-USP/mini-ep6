@@ -11,7 +11,7 @@ class MediaCenter():
 
     def play_media(self, title):
         for m in self.media_list:
-            if (m.title == title):
+            if (m.title == 'title'):
                 m.play()
 
     def add_media(self, format, title):
