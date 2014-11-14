@@ -1,4 +1,4 @@
-from playstrategy import TVStrategy,
+from playstrategy import TVStrategy, RadioStrategy
 
 
 class Media():
