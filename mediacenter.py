@@ -13,12 +13,8 @@ class MediaCenter():
 				m.play()
 
 	def add_media(self, format, title):
-		if (format == 'dvd'):
-			media = dvd(title)
-		elif (format == 'cd'):
-			media = cd(title)
-		else (format == 'mp3'):
-			media = mp3(title)
+		f = MediaFactory()
+		media = f.create(format, title)
 		media_list.append(media)
 
 	def remove_media(self, title):
