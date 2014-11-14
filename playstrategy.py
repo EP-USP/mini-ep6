@@ -13,7 +13,7 @@ class TVStrategy(PlayStrategy):
 
     def play(self, instance):
         print ('Playing a nice ' + instance.title + '\'s ' +
-            instance.name + 'at my big TV')
+            instance.name + ' on my big TV')
 
 
 class RadioStrategy(PlayStrategy):
@@ -22,5 +22,5 @@ class RadioStrategy(PlayStrategy):
 
     def play(self, instance):
         print ('Playing a nice ' + instance.title + '\'s ' +
-            instance.name + 'at my big TV')
+            instance.name + ' on my big Radio')
 
