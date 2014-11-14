@@ -21,7 +21,7 @@ class CD(Media):
         self.play_strategy = RadioStrategy()
 
 
-class CD(Media):
+class MP3(Media):
     def __init__(self, title):
         self.title = title
         self.name = 'MP3'
